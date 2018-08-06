@@ -100,6 +100,18 @@ a:active {
     background-color: #7624d3;
 }
 
+a:link.code {
+    color: #c76ec6;
+}
+
+a:visited.code {
+    color: #c76ec6;
+}
+
+a:hover.code {
+    color: #e47fe2;
+}
+
 section {
     padding-top: 10px;
 }
