@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css?family=Rajdhani');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
+
+/* Desktop */
+body {
+    background-color: #1f2a7e;
+    font-family: 'Rajdhani', sans-serif;
+    text-align: center; 
+    padding-bottom: 10px;
+}
+
+/* credits: 
+
+"Alien moon, digital, 3840x2160px"
+
+by: Scaredpie (https://www.reddit.com/user/Scaredpie)
+*/
+
+#mountains {
+    background-image: url("/img/davey-bg4.png"); 
+    height: 1100px;
+    width: 100%;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+p {
+    font-family: 'Rajdhani', sans-serif;
+    color: white;
+    font-size: 18px;
+}
+
+h1, h2, h3, h4 {
+    color: white;
+}
+
+#mountains h1 {
+    padding-top: 140px;
+    color: #f3f3f3;
+    font-family: 'Roboto Slab', serif;
+    text-shadow: 0px 0px 8px white;
+    font-size: 58px;
+}
+
+.platter {
+    width: 64%;
+    height: auto;
+    margin: auto;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 50px;
+}
+
+hr {
+    background-color: #fccfe2;
+}
+
+.flappy:hover {
+    transform: rotate(-15deg);
+}
+
+#weather-zip:hover {
+    color: #1c92d2;
+}
+
+#weather-zip {
+    color: white;
+}
+
+a:link {
+    color: #8e54cc;
+    font-family: 'Rajdhani', sans-serif;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #8e54cc;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #5239af;
+    text-decoration: none;
+}
+
+a:active {
+    color: #8e54cc;
+}
+
+.bold {
+    background-color: #9457d9;
+}
+
+.bold::after {
+    content: ' ';
+}
+
+.bold2 {
+    background-color: #7624d3;
+}
+
+section {
+    padding-top: 10px;
+}
+
+#davey {
+    border-radius: 50%;
+    width: 42%;
+    box-shadow: 2px 2px 40px black;
+    filter: blur(0px);
+}
+
+#davey:hover {
+    filter: blur(2px);
+}
+
+/* Mobile */
+@media only screen and (max-device-width: 480px) {
+    .platter {
+      width: 100%;
+      padding-top: 60px;
+    }
+  
+    #mountains {
+      background-image: url("/img/davey-bg4.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 620px;
+     
+    }
+  
+    #mountains h1 {
+        padding-top: 45px;
+        font-size: 50px;
+    }
+}
+
+/* Animation(s) */
+
+@-moz-keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      -moz-transform: translateY(0);
+      transform: translateY(0);
+    }
+    40% {
+      -moz-transform: translateY(-30px);
+      transform: translateY(-30px);
+    }
+    60% {
+      -moz-transform: translateY(-15px);
+      transform: translateY(-15px);
+    }
+  }
+  @-webkit-keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+    }
+    40% {
+      -webkit-transform: translateY(-30px);
+      transform: translateY(-30px);
+    }
+    60% {
+      -webkit-transform: translateY(-15px);
+      transform: translateY(-15px);
+    }
+  }
+  @keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      -moz-transform: translateY(0);
+      -ms-transform: translateY(0);
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+    }
+    40% {
+      -moz-transform: translateY(-30px);
+      -ms-transform: translateY(-30px);
+      -webkit-transform: translateY(-30px);
+      transform: translateY(-30px);
+    }
+    60% {
+      -moz-transform: translateY(-15px);
+      -ms-transform: translateY(-15px);
+      -webkit-transform: translateY(-15px);
+      transform: translateY(-15px);
+    }
+  }
+
+.bounce {
+    -moz-animation: bounce 2s infinite;
+    -webkit-animation: bounce 2s infinite;
+    animation: bounce 2s infinite;
+}

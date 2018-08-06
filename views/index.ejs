@@ -1,0 +1,38 @@
+<%- include('Header') -%>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<body>
+<div id="mountains"><h1>David Ranich</h1><p>Welcome to my website. Please click that arrow to explore.</p><br>
+    <div class="arrow bounce">
+        <a href="#content"><i class="fa fa-arrow-down fa-4x" style="color: #fde0eb;"></i></a>
+    </div>
+</div>
+<div class="container">
+<div class="platter" id="content">
+<%- include('content') -%> 
+<hr>
+</div>
+</div>
+</body>
+<footer><p style="font-size: 14px"><em>© 2018 David Ranich</em></p></footer>
+
+<script>
+// used for adding a "smooth scroll" when jumping to anchor.
+    $(document).ready(function(){
+        $("a").on('click', function(event) {
+        if (this.hash !== "") {
+            event.preventDefault();
+            var hash = this.hash;
+
+            $('html, body').animate({
+            scrollTop: $(hash).offset().top
+            }, 1000, function(){
+
+            window.location.hash = hash;
+            });
+        }
+    });
+});
+</script>
+
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>OOPS!</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Rajdhani" rel="stylesheet">
+<script src="https://unpkg.com/tippy.js@2.1.1/dist/tippy.all.min.js"></script>
+</head>
+
+<style>
+html {
+    background-color: black;
+}
+
+body {
+    margin: 0;
+    height: 100%;
+    padding-top: 200px;
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+#blink {
+    animation: blink 1.5s linear infinite;
+    font-family: 'Press Start 2P', cursive;
+}
+
+@keyframes blink {
+    50% { opacity: 0; }
+}
+
+#ghosty {
+    -webkit-animation: 4s linear 0s infinite alternate ghosty;
+    animation: 4s linear 0s infinite alternate ghosty;
+}
+
+@-webkit-keyframes ghosty { from { margin-left: -20%; } to { margin-left: 20%; }  }
+    @keyframes ghosty { from { margin-left: -20%; } to { margin-left: 20%; }  }
+
+a:link {
+    color: white;
+    text-decoration: none;
+}
+
+a:visited {
+    color: white;
+}
+
+a:hover {
+    color: #00CDAC;
+}
+
+a:active {
+    color: white;
+}
+
+.tippy-tooltip.ghosty-theme {
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+    font-family: 'Rajdhani', sans-serif; 
+    font-size: 1.25em;
+}
+
+.tippy-tooltip.ghosty-theme .tippy-backdrop {
+    background-color: white;
+    font-family: 'Rajdhani', sans-serif; 
+    font-size: 1.25em;
+}
+</style>
+
+<body>
+<a href="/"><p style="font-size: 60px;" id="ghosty" title="Uh oh! There's no such page that you're looking for. Please <strong>click on me</strong> to get yourself to safety!">👻</p></a>
+<h2 id="blink">404 ERROR</h2>
+</body>
+
+<script>
+tippy('#ghosty', {
+    animation: 'perspective',
+    sticky: 'true',
+    arrow: false,
+    hideOnClick: false,
+    theme: 'ghosty'
+  });
+ghosty._tippy.show();
+</script>
+
+
+</html>
