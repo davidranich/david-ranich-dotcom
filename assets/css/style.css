@@ -53,7 +53,7 @@ h1, h2, h3, h4 {
 }
 
 hr {
-    background-color: #fccfe2;
+    background-color: #494fac;
 }
 
 .flappy:hover {
@@ -69,13 +69,13 @@ hr {
 }
 
 a:link {
-    color: #8e54cc;
+    color: #9457d1;
     font-family: 'Rajdhani', sans-serif;
     text-decoration: none;
 }
 
 a:visited {
-    color: #8e54cc;
+    color: #9457d1;
     text-decoration: none;
 }
 
@@ -85,7 +85,7 @@ a:hover {
 }
 
 a:active {
-    color: #8e54cc;
+    color: #9457d1;
 }
 
 .bold {
@@ -101,15 +101,15 @@ a:active {
 }
 
 a:link.code {
-    color: #c76ec6;
+    color: #e47fe2;
 }
 
 a:visited.code {
-    color: #c76ec6;
+    color: #e47fe2;
 }
 
 a:hover.code {
-    color: #e47fe2;
+    color: #9457d1;
 }
 
 section {
