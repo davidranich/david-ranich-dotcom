@@ -69,23 +69,23 @@ hr {
 }
 
 a:link {
-    color: #9457d1;
+    color: #e47fe2;
     font-family: 'Rajdhani', sans-serif;
     text-decoration: none;
 }
 
 a:visited {
-    color: #9457d1;
+    color: #e47fe2;
     text-decoration: none;
 }
 
 a:hover {
-    color: #5239af;
+    color: #9457d1;
     text-decoration: none;
 }
 
 a:active {
-    color: #9457d1;
+    color: #e47fe2;
 }
 
 .bold {
