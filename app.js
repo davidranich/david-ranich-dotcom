@@ -26,4 +26,4 @@ require('./routes')(app);
 
 app.listen(port);
 
-console.log(`Listening for port: ${port}`);
+console.log(`Listening on port: ${port}`);
